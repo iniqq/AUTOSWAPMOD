@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "lungeswap",
+  "version": "1.0.0",
+  "name": "Lunge Swap",
+  "description": "Hold a hotkey to auto click and swap to your spear and back. Delay configurable in Mod Menu.",
+  "authors": ["You"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.lungeswap.LungeSwapClient"],
+    "modmenu": ["com.lungeswap.ModMenuIntegration"]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  },
+  "suggests": { "modmenu": "*" }
+}
